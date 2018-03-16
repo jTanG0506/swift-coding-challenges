@@ -49,3 +49,15 @@ assert("Hello, world".fuzzyContains("Hello") == true, "Challenge 4 failed")
 assert("Hello, world".fuzzyContains("WORLD") == true, "Challenge 4 failed")
 assert("Hello, world".fuzzyContains("Goodbye") == false, "Challenge 4 failed")
 
+// Challenge 5
+// Write a function that accepts a string, and returns how many times a specific character appears, taking case into account.
+// Tip: If you can solve this without using a for-in loop, you can consider it a Tricky challenge.
+func challenge5(char: Character, str: String) -> Int {
+  return str.reduce(0) {
+    $1 == char ? $0 + 1 : $0
+  }
+}
+
+assert(challenge5(char: "a", str: "The rain in Spain") == 2, "Challenge 5 failed")
+assert(challenge5(char: "i", str: "Mississippi") == 4, "Challenge 5 failed")
+assert(challenge5(char: "i", str: "Hacking with Swift") == 3, "Challenge 5 failed")
