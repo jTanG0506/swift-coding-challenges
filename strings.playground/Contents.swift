@@ -1,5 +1,7 @@
 // Chapter 1 - Strings
 
+import Cocoa
+
 // Challenge 1
 // Write a function that accepts a String as its only parameter, and returns true if the string has only unique letters, taking letter case into account.
 func challenge1(input: String) -> Bool {
@@ -34,3 +36,16 @@ assert(challenge3(first: "a1 b2", second: "b1 a2") == true, "Challenge 3 failed"
 assert(challenge3(first: "abc", second: "abca") == false, "Challenge 3 failed")
 assert(challenge3(first: "abca", second: "Abc") == false, "Challenge 3 failed")
 assert(challenge3(first: "abca", second: "cbAa") == false, "Challenge 3 failed")
+
+// Challenge 4
+// Write your own version of the contains() method on String that ignores letter case, and without using the existing contains() method.
+extension String {
+  func fuzzyContains(_ str: String) -> Bool {
+    return range(of: str, options: .caseInsensitive) != nil
+  }
+}
+
+assert("Hello, world".fuzzyContains("Hello") == true, "Challenge 4 failed")
+assert("Hello, world".fuzzyContains("WORLD") == true, "Challenge 4 failed")
+assert("Hello, world".fuzzyContains("Goodbye") == false, "Challenge 4 failed")
+
