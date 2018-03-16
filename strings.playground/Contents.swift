@@ -22,3 +22,15 @@ assert(challenge2(input: "Rats live on no evil star") == true, "Challenge 2 fail
 assert(challenge2(input: "Never odd or even") == false, "Challenge 2 failed")
 assert(challenge2(input: "Hello, world") == false, "Challenge 2 failed")
 
+// Challenge 3
+// Write a function that accepts two String parameters, and returns true if they contain the same characters in any order taking into account letter case.
+func challenge3(first: String, second: String) -> Bool {
+  return first.count == second.count && first.sorted() == second.sorted()
+}
+
+assert(challenge3(first: "abca", second: "abca") == true, "Challenge 3 failed")
+assert(challenge3(first: "abc", second: "cba") == true, "Challenge 3 failed")
+assert(challenge3(first: "a1 b2", second: "b1 a2") == true, "Challenge 3 failed")
+assert(challenge3(first: "abc", second: "abca") == false, "Challenge 3 failed")
+assert(challenge3(first: "abca", second: "Abc") == false, "Challenge 3 failed")
+assert(challenge3(first: "abca", second: "cbAa") == false, "Challenge 3 failed")
