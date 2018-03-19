@@ -5,11 +5,11 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 
 ## :blue_book: Challenges Checklist
 ### Strings
-- [ ] Challenge 1: Are the letters unique?
-- [ ] Challenge 2: Is a string a palindrome?
-- [ ] Challenge 3: Do two strings contain the same characters?
-- [ ] Challenge 4: Does one string contain another?
-- [ ] Challenge 5: Count the characters
+- [X] Challenge 1: Are the letters unique?
+- [X] Challenge 2: Is a string a palindrome?
+- [X] Challenge 3: Do two strings contain the same characters?
+- [X] Challenge 4: Does one string contain another?
+- [X] Challenge 5: Count the characters
 - [ ] Challenge 6: Remove duplicate letters from a string
 - [ ] Challenge 7: Condense whitespace
 - [ ] Challenge 8: String is rotated
