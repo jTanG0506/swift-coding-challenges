@@ -22,7 +22,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [ ] Challenge 15: Reverse the words in a string
 
 ### Numbers 
-- [ ] Challenge 16 :Fizz Buzz
+- [ ] Challenge 16: Fizz Buzz
 - [ ] Challenge 17: Generate a random number in a range
 - [ ] Challenge 18: Recreate the pow() function
 - [ ] Challenge 19: Swap two numbers
