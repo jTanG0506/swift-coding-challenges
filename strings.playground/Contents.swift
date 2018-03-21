@@ -61,3 +61,22 @@ func challenge5(char: Character, str: String) -> Int {
 assert(challenge5(char: "a", str: "The rain in Spain") == 2, "Challenge 5 failed")
 assert(challenge5(char: "i", str: "Mississippi") == 4, "Challenge 5 failed")
 assert(challenge5(char: "i", str: "Hacking with Swift") == 3, "Challenge 5 failed")
+
+// Challenge 5
+// Write a function that accepts a string as its input, and returns the same string just with duplicate letters removed.
+// Tip: If you can solve this challenge without a for-in loop, you can consider it “tricky” rather than “easy”.
+func challenge6(str: String) -> String {
+  var used = [Character]()
+  
+  for letter in str {
+    if !used.contains(letter) {
+      used.append(letter)
+    }
+  }
+  
+  return String(used)
+}
+
+assert(challenge6(str: "wombat") == "wombat", "Challenge 6 failed")
+assert(challenge6(str: "hello") == "helo", "Challenge 6 failed")
+assert(challenge6(str: "Mississippi") == "Misp", "Challenge 6 failed")
