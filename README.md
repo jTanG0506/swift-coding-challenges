@@ -11,7 +11,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [X] Challenge 4: Does one string contain another?
 - [X] Challenge 5: Count the characters
 - [X] Challenge 6: Remove duplicate letters from a string
-- [ ] Challenge 7: Condense whitespace
+- [X] Challenge 7: Condense whitespace
 - [ ] Challenge 8: String is rotated
 - [ ] Challenge 9: Find pangrams
 - [ ] Challenge 10: Vowels and consonants
