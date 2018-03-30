@@ -102,3 +102,14 @@ assert(challenge8(str1: "abcde", str2: "cdeab") == true, "Challenge 8 failed")
 assert(challenge8(str1: "abcde", str2: "abced") == false, "Challenge 8 failed")
 assert(challenge8(str1: "abc", str2: "a") == false, "Challenge 8 failed")
 
+// Challenge 9
+// A pangram is a string that contains every letter of the alphabet at least once. Write a function that returns true if it is given a string that is an English pangram, ignoring letter case.
+func challenge9(str: String) -> Bool {
+  let set = Set(str.lowercased())
+  let letters = set.filter { $0 >= "a" && $0 <= "z" }
+  return letters.count == 26
+}
+
+assert(challenge9(str: "The quick brown fox jumps over the lazy dog") == true, "Challenge 9 failed")
+assert(challenge9(str: "The quick brown fox jumped over the lazy dog") == false, "Challenge 9 failed")
+
