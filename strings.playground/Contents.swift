@@ -90,3 +90,15 @@ func challenge7(str: String) -> String {
 assert(challenge7(str: "a   b   c") == "a b c", "Challenge 7 failed")
 assert(challenge7(str: "    a") == " a", "Challenge 7 failed")
 assert(challenge7(str: "abc") == "abc", "Challenge 7 failed")
+
+// Challenge 8
+// Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
+func challenge8(str1: String, str2: String) -> Bool {
+  return str1.count == str2.count && "\(str1)\(str1)".contains(str2)
+}
+
+assert(challenge8(str1: "abcde", str2: "eabcd") == true, "Challenge 8 failed")
+assert(challenge8(str1: "abcde", str2: "cdeab") == true, "Challenge 8 failed")
+assert(challenge8(str1: "abcde", str2: "abced") == false, "Challenge 8 failed")
+assert(challenge8(str1: "abc", str2: "a") == false, "Challenge 8 failed")
+
