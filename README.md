@@ -13,7 +13,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [X] Challenge 6: Remove duplicate letters from a string
 - [X] Challenge 7: Condense whitespace
 - [X] Challenge 8: String is rotated
-- [ ] Challenge 9: Find pangrams
+- [X] Challenge 9: Find pangrams
 - [ ] Challenge 10: Vowels and consonants
 - [ ] Challenge 11: Three different letters
 - [ ] Challenge 12: Find longest prefix
