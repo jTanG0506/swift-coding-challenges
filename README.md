@@ -16,7 +16,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [X] Challenge 9: Find pangrams
 - [X] Challenge 10: Vowels and consonants
 - [X] Challenge 11: Three different letters
-- [ ] Challenge 12: Find longest prefix
+- [X] Challenge 12: Find longest prefix
 - [ ] Challenge 13: Run-length encoding
 - [ ] Challenge 14: String permutations
 - [ ] Challenge 15: Reverse the words in a string

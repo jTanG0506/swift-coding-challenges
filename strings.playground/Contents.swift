@@ -162,3 +162,28 @@ assert(challenge11(first: "Clamp", second: "Grams") == true, "Challenge 11 faile
 assert(challenge11(first: "Clamp", second: "Grans") == false, "Challenge 11 failed")
 assert(challenge11(first: "Clamp", second: "Clam") == false, "Challenge 11 failed")
 assert(challenge11(first: "clamp", second: "maple") == false, "Challenge 11 failed")
+
+// Challenge 12
+// Write a function that accepts a string of words with a similar prefix, separated by spaces, and returns the longest substring that prefixes all words.
+func challenge12(input: String) -> String {
+  let parts = input.components(separatedBy: " ")
+  guard let first = parts.first else { return "" }
+  
+  var currentPrefix = ""
+  var bestPrefix = ""
+  
+  for letter in first {
+    currentPrefix.append(letter)
+    for word in parts {
+      if !word.hasPrefix(currentPrefix) {
+        return bestPrefix
+      }
+    }
+    bestPrefix = currentPrefix
+  }
+  
+  return bestPrefix
+}
+
+assert(challenge12(input: "swift switch swill swim") == "swi", "Challenge 12 failed")
+assert(challenge12(input: "flip flap flop") == "fl", "Challenge 12 failed")
