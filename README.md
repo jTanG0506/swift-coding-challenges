@@ -14,7 +14,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [X] Challenge 7: Condense whitespace
 - [X] Challenge 8: String is rotated
 - [X] Challenge 9: Find pangrams
-- [ ] Challenge 10: Vowels and consonants
+- [X] Challenge 10: Vowels and consonants
 - [ ] Challenge 11: Three different letters
 - [ ] Challenge 12: Find longest prefix
 - [ ] Challenge 13: Run-length encoding

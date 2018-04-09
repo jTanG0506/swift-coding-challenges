@@ -113,3 +113,25 @@ func challenge9(str: String) -> Bool {
 assert(challenge9(str: "The quick brown fox jumps over the lazy dog") == true, "Challenge 9 failed")
 assert(challenge9(str: "The quick brown fox jumped over the lazy dog") == false, "Challenge 9 failed")
 
+// Challenge 10
+// Given a string in English, return a tuple containing the number of vowels and consonants.
+func challenge10(str: String) -> (vowels: Int, consonants: Int) {
+  let vowels = "aeiou"
+  let consonants = "bcdfghjklmnpqrstvwxyz"
+  
+  var vowelCount = 0
+  var consonantCount = 0
+  
+  for letter in str.lowercased() {
+    if vowels.contains(letter) {
+      vowelCount += 1
+    } else if consonants.contains(letter) {
+      consonantCount += 1
+    }
+  }
+  
+  return (vowelCount, consonantCount)
+}
+
+assert(challenge10(str: "Swift Coding Challenges") == (6, 15), "Challenge 10 failed")
+assert(challenge10(str: "Mississippi") == (4, 7), "Challenge 10 failed")
