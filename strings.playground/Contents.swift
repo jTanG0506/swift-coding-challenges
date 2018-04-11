@@ -187,3 +187,34 @@ func challenge12(input: String) -> String {
 
 assert(challenge12(input: "swift switch swill swim") == "swi", "Challenge 12 failed")
 assert(challenge12(input: "flip flap flop") == "fl", "Challenge 12 failed")
+
+// Challenge 13
+// Write a function that accepts a string as input, then returns how often each letter is repeated in a single run, taking case into account.
+func challenge13(input: String) -> String {
+  var currentLetter: Character?
+  var returnString = ""
+  var repeatCounter = 0
+  
+  for letter in input {
+    if letter == currentLetter {
+      repeatCounter += 1
+    } else {
+      if let currentLetter = currentLetter {
+        returnString.append("\(currentLetter)\(repeatCounter)")
+      }
+      
+      currentLetter = letter
+      repeatCounter = 1
+    }
+  }
+  
+  if let currentLetter = currentLetter {
+    returnString.append("\(currentLetter)\(repeatCounter)")
+  }
+  
+  return returnString
+}
+
+assert(challenge13(input: "aabbcc") == "a2b2c2", "Challenge 13 failed")
+assert(challenge13(input: "aaabaaabaaa") == "a3b1a3b1a3", "Challenge 13 failed")
+assert(challenge13(input: "aaAAaa") == "a2A2a2", "Challenge 13 failed")
