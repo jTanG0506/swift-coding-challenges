@@ -30,3 +30,19 @@ func challenge18(base: Int, power: Int) -> Int {
 func challenge19(a: Int, b: Int) -> (Int, Int) {
   return (b, a)
 }
+
+// Challenge 20
+// Write a function that accepts an integer as its parameter and returns true if the number is prime.
+func challenge20(number: Int) -> Bool {
+  guard number >= 2 else { return false }
+  guard number != 2 else { return true }
+  
+  let upperBound = Int(ceil(sqrt(Double(number))))
+  for i in 2...upperBound {
+    if number % i == 0 {
+      return false
+    }
+  }
+  
+  return true
+}
