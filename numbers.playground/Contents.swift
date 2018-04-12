@@ -24,3 +24,9 @@ func challenge18(base: Int, power: Int) -> Int {
   
   return base * challenge18(base: base, power: power - 1)
 }
+
+// Challenge 19
+// Swap two positive variable integers, a and b, without using a temporary variable.
+func challenge19(a: Int, b: Int) -> (Int, Int) {
+  return (b, a)
+}
