@@ -15,3 +15,12 @@ func challenge16() {
 func challenge17(min: Int, max: Int) -> Int {
   return Int(arc4random_uniform(UInt32(max - min + 1))) + min
 }
+
+// Challenge 18
+// Create a function that accepts positive two integers, and raises the first to the power of the second.
+func challenge18(base: Int, power: Int) -> Int {
+  guard base > 0, power > 0 else { return 0 }
+  if power == 1 { return base }
+  
+  return base * challenge18(base: base, power: power - 1)
+}
