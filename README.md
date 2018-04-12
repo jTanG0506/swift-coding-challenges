@@ -23,7 +23,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 
 ### Numbers 
 - [X] Challenge 16: Fizz Buzz
-- [ ] Challenge 17: Generate a random number in a range
+- [X] Challenge 17: Generate a random number in a range
 - [ ] Challenge 18: Recreate the pow() function
 - [ ] Challenge 19: Swap two numbers
 - [ ] Challenge 20: Number is prime
