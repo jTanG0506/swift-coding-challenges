@@ -19,7 +19,7 @@ My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store
 - [X] Challenge 12: Find longest prefix
 - [X] Challenge 13: Run-length encoding
 - [X] Challenge 14: String permutations
-- [ ] Challenge 15: Reverse the words in a string
+- [X] Challenge 15: Reverse the words in a string
 
 ### Numbers 
 - [ ] Challenge 16: Fizz Buzz
