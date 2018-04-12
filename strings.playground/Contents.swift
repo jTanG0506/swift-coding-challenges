@@ -218,3 +218,20 @@ func challenge13(input: String) -> String {
 assert(challenge13(input: "aabbcc") == "a2b2c2", "Challenge 13 failed")
 assert(challenge13(input: "aaabaaabaaa") == "a3b1a3b1a3", "Challenge 13 failed")
 assert(challenge13(input: "aaAAaa") == "a2A2a2", "Challenge 13 failed")
+
+// Challenge 14
+// Write a function that prints all possible permutations of a given input string.
+func challenge14(string: String, current: String = "") {
+  let length = string.count
+  let strArray = Array(string)
+  if (length == 0) {
+    print(current)
+  } else {
+    print(current)
+    for i in 0 ..< length {
+      let left = String(strArray[0 ..< i])
+      let right = String(strArray[i+1 ..< length])
+      challenge14(string: left + right, current: current + String(strArray[i]))
+    }
+  }
+}
