@@ -1,4 +1,4 @@
-# Swift Coding Challenges
+![](header.png)
 
 ## :question: About
 My solutions to [Swift Coding Challenges](https://www.hackingwithswift.com/store/swift-coding-challenges) by Hacking With Swift
